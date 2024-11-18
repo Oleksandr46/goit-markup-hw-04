@@ -364,7 +364,7 @@ img {
   letter-spacing: 0.02em;
   line-height: 1.5;
 }
-.overlay:hover {
+.heading-item:hover .overlay {
   transform: translateY(0%);
 }
 /* #endregion */
