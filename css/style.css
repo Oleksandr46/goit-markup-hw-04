@@ -44,6 +44,10 @@ img {
   clip-path: inset(100%);
   overflow: hidden;
 }
+.socials-list {
+  display: flex;
+}
+
 .socials-link:hover,
 .socials-link:focus {
   background-color: #31d0aa;
@@ -76,6 +80,8 @@ img {
 .header-logo {
   padding: 24px 0;
   margin-right: 76px;
+  position: relative;
+  color: #404bbf;
 }
 .logo-dark {
   color: #2e2f42;
@@ -134,9 +140,7 @@ img {
   line-height: 1.5;
   color: #434455;
   letter-spacing: 0.02em;
-}
-.socials-list {
-  display: flex;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* #endregion */
@@ -323,12 +327,13 @@ img {
 }
 .heading-wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .overlay {
   background-color: #4d5ae5;
   display: flex;
-
+  transform: translateY(100%);
   position: absolute;
   padding: 40px 32px;
   top: 0;
@@ -339,6 +344,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .heading-div {
